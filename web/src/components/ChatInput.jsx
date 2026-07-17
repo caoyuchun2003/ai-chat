@@ -32,7 +32,7 @@ export default function ChatInput({ onSend, disabled }) {
         ref={textareaRef}
         rows={1}
         value={value}
-        placeholder="输入消息,Enter 发送,Shift+Enter 换行"
+        placeholder="和瑶瑶说点什么,Enter 发送,Shift+Enter 换行"
         onChange={handleInput}
         onKeyDown={handleKeyDown}
       />

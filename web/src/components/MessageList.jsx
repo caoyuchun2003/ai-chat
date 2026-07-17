@@ -15,8 +15,8 @@ export default function MessageList({ messages, typing, loading, onSkip }) {
     <div className="message-list" onClick={typing ? onSkip : undefined}>
       {empty && (
         <div className="empty-hint">
-          <p>👋 你好,有什么可以帮你的?</p>
-          <p className="empty-sub">对话记录保存在本地浏览器中</p>
+          <p>🌿 嗨,我是瑶瑶</p>
+          <p className="empty-sub">爸爸给夏瑶做的聊天小助手 · 对话记录保存在本地浏览器</p>
         </div>
       )}
       {messages.map((m, i) => (

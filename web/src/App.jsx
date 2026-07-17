@@ -13,7 +13,7 @@ export default function App() {
   return (
     <div className="app">
       <header className="header">
-        <h1>AI 聊天</h1>
+        <h1>瑶瑶 <span className="sub">AI 聊天</span></h1>
         <button className="clear-btn" onClick={handleClear} title="清空对话">
           清空
         </button>

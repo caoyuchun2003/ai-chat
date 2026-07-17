@@ -1,28 +1,29 @@
 :root {
-  --bg: #f5f5f7;
+  /* 夏瑶主题:夏日玉色(青碧) */
+  --bg: #f2f7f5;
   --panel: #ffffff;
-  --text: #1d1d1f;
-  --text-dim: #86868b;
-  --border: #e5e5e7;
-  --user-bubble: #0a84ff;
+  --text: #1c2b27;
+  --text-dim: #6a807a;
+  --border: #dce8e4;
+  --user-bubble: #12a394;
   --user-text: #ffffff;
   --ai-bubble: #ffffff;
   --error: #d70015;
-  --code-bg: #f0f0f2;
+  --code-bg: #eef4f2;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #1c1c1e;
-    --panel: #2c2c2e;
-    --text: #f2f2f7;
-    --text-dim: #98989e;
-    --border: #3a3a3c;
-    --user-bubble: #0a84ff;
+    --bg: #14201d;
+    --panel: #1d2c28;
+    --text: #eaf3f0;
+    --text-dim: #8ea69f;
+    --border: #2b3d38;
+    --user-bubble: #17b3a2;
     --user-text: #ffffff;
-    --ai-bubble: #2c2c2e;
+    --ai-bubble: #1d2c28;
     --error: #ff453a;
-    --code-bg: #1c1c1e;
+    --code-bg: #14201d;
   }
 }
 
@@ -67,6 +68,15 @@ body {
 .header h1 {
   font-size: 17px;
   font-weight: 600;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.header h1 .sub {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-dim);
 }
 
 .clear-btn {
