@@ -1,0 +1,11 @@
+**/.aws-sam/
+**/packaged.yaml
+*.zip
+.DS_Store
+.env
+.env.local
+cfc/*.zip
+cfc/src/*.zip
+cfc/template.deploy.yaml
+dist/
+node_modules/

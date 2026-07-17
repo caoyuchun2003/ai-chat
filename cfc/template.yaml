@@ -1,0 +1,27 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: BCE::Serverless-2018-10-31
+Description: AI Chat CFC — Qianfan proxy for chat.yuchuntest.com
+
+Resources:
+  AiChatFunction:
+    Type: BCE::Serverless::Function
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs12
+      CodeUri: ./src/
+      Description: AI chat proxy to Qianfan
+      MemorySize: 256
+      Timeout: 60
+      Environment:
+        Variables:
+          MODEL: 'deepseek-v3.2'
+          ALLOW_ORIGIN: 'https://chat.yuchuntest.com'
+      Events:
+        ChatHttp:
+          Type: HTTP
+          Properties:
+            ResourcePath: /
+            Method:
+              - POST
+              - OPTIONS
+            AuthType: anonymous
