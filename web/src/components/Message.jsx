@@ -20,6 +20,9 @@ export default function Message({ role, content, error = false, cursor = false }
 
   return (
     <div className={`msg ${isUser ? 'msg-user' : 'msg-ai'}${error ? ' msg-error' : ''}`}>
+      {!isUser && (
+        <img className="msg-avatar" src="/yaoyao-avatar.jpg" alt="瑶瑶" width="32" height="32" />
+      )}
       <div className="msg-bubble">
         {html !== null ? (
           <>

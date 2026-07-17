@@ -65,12 +65,28 @@ body {
   background: var(--bg);
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid rgba(18, 163, 148, 0.2);
+  box-shadow: 0 0 0 1px var(--border);
+}
+
 .header h1 {
   font-size: 17px;
   font-weight: 600;
   display: flex;
   align-items: baseline;
   gap: 8px;
+  margin: 0;
 }
 
 .header h1 .sub {
@@ -108,9 +124,22 @@ body {
   margin: auto;
   text-align: center;
   color: var(--text-dim);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.empty-hint p:first-child {
+.empty-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border: 3px solid rgba(18, 163, 148, 0.18);
+  box-shadow: 0 4px 14px rgba(18, 163, 148, 0.18);
+}
+
+.empty-hint p:first-of-type {
   font-size: 20px;
   color: var(--text);
   margin-bottom: 8px;
@@ -122,6 +151,8 @@ body {
 
 .msg {
   display: flex;
+  align-items: flex-end;
+  gap: 8px;
 }
 
 .msg-user {
@@ -130,6 +161,15 @@ body {
 
 .msg-ai {
   justify-content: flex-start;
+}
+
+.msg-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
 }
 
 .msg-bubble {

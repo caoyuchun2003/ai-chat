@@ -15,6 +15,7 @@ export default function MessageList({ messages, typing, loading, onSkip }) {
     <div className="message-list" onClick={typing ? onSkip : undefined}>
       {empty && (
         <div className="empty-hint">
+          <img className="empty-avatar" src="/yaoyao-avatar.jpg" alt="瑶瑶" width="72" height="72" />
           <p>🌿 嗨,我是瑶瑶</p>
           <p className="empty-sub">爸爸给夏瑶做的聊天小助手 · 对话记录保存在本地浏览器</p>
         </div>
@@ -25,6 +26,7 @@ export default function MessageList({ messages, typing, loading, onSkip }) {
       {typing && <Message role="assistant" content={typing.shown} cursor />}
       {loading && (
         <div className="msg msg-ai">
+          <img className="msg-avatar" src="/yaoyao-avatar.jpg" alt="瑶瑶" width="32" height="32" />
           <div className="msg-bubble">
             <span className="dots">
               <i /><i /><i />

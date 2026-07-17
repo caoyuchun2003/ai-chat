@@ -13,7 +13,10 @@ export default function App() {
   return (
     <div className="app">
       <header className="header">
-        <h1>瑶瑶 <span className="sub">AI 聊天</span></h1>
+        <div className="brand">
+          <img className="avatar" src="/yaoyao-avatar.jpg" alt="瑶瑶" width="36" height="36" />
+          <h1>瑶瑶 <span className="sub">AI 聊天</span></h1>
+        </div>
         <button className="clear-btn" onClick={handleClear} title="清空对话">
           清空
         </button>
